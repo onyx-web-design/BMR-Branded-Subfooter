@@ -1,6 +1,126 @@
+@font-face {
+  font-family: 'ZurichBT-Bold';
+  src: url(ZurichBT-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'ZurichBT-Light';
+  src: url(ZurichBT-Light.ttf);
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  border-bottom: solid 1px #ffffff;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.branded-footer {
+  background: #006386;
+  background: -webkit-gradient(linear, left top, right top, from(#006386), color-stop(100%, #001946), color-stop(6386%, #020024));
+  background: linear-gradient(90deg, #006386 0%, #001946 100%, #020024 6386%);
+}
+
+.branded-footer * {
+  font-family: 'ZurichBT-Light', sans-serif;
+}
+
+.logo-container {
+  width: 25%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  text-align: center;
+  border-right: solid 1px #ffffff;
+}
+
+.logo-container img {
+  max-width: 250px;
+  padding: 2rem 4rem;
+}
+
+.info-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-container .footer-excerpt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-container .footer-excerpt p {
+  margin: 0 auto 0 2rem;
+  color: #ffffff;
+  max-width: 500px;
+}
+
+.footer-bottom {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-bottom .terms {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.footer-bottom .terms a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-bottom .discover-more {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  font-family: 'ZurichBT-Bold', sans-serif;
+}
+
+.footer-bottom .discover-more::after {
+  content: '';
+  width: 50%;
+  height: 4px;
+  background-color: #E24725;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.socials {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+}
+
+.socials img {
+  width: 50px;
+  margin: 0 2rem;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 /*# sourceMappingURL=branded-footer.css.map */

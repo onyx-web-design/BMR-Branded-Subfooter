@@ -1,3 +1,96 @@
+@font-face {
+	font-family: 'ZurichBT-Bold';
+	src: url(ZurichBT-Bold.ttf);
+}
+@font-face {
+	font-family: 'ZurichBT-Light';
+	src: url(ZurichBT-Light.ttf);
+}
+
 .flex-container {
 	display: flex;
+	width: 100%;
+    border-bottom: solid 1px #ffffff;
+    flex-wrap: nowrap;
+}
+
+.branded-footer {
+	background: rgb(0,99,134);
+	background: linear-gradient(90deg, rgba(0,99,134,1) 0%, rgba(0,25,70,1) 100%, rgba(2,0,36,1) 006386%);
+	* {
+		font-family: 'ZurichBT-Light', sans-serif;
+	}
+}
+.logo-container {
+	width: 25%;
+    flex: 1 0 auto;
+    text-align: center;
+    border-right: solid 1px #ffffff;
+	img {
+		max-width: 250px;
+		padding: 2rem 4rem;
+
+	}
+}
+
+.info-container {
+	width: 100%;
+	display: flex; 
+
+	.footer-excerpt {
+		display: flex;
+		flex: 1 1 auto;
+		height: 100%;
+		width: 100%;
+		align-items: center;
+
+		p {
+			margin: 0 auto 0 2rem;
+			color: #ffffff;
+			max-width: 500px;
+		}
+	}
+}
+
+.footer-bottom {
+	padding: 2rem;
+	display: flex;
+	
+	.terms {
+		flex: 1 0 auto;
+		a {
+			text-decoration: none;
+			color: #ffffff;
+		}
+	}
+	.discover-more {
+		text-transform: uppercase;
+		color: #FFFFFF;
+		position: relative;
+		font-family: 'ZurichBT-Bold', sans-serif;
+
+		&::after {
+			content: '';
+			width:50%;
+			height:4px;
+			background-color:#E24725;
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+
+		}
+	}
+}
+
+.socials {
+	flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+	width: 20%;
+
+	img {
+		width: 50px;
+		margin: 0 2rem;
+		filter: brightness(0) invert(1);
+	}
 }
