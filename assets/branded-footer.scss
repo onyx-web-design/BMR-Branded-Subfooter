@@ -7,6 +7,7 @@
 	src: url(assets/ZurichBT-Light.ttf);
 }
 
+
 .flex-container {
 	display: flex;
 	width: 100%;
@@ -17,18 +18,25 @@
 .branded-footer {
 	background: rgb(0,99,134);
 	background: linear-gradient(90deg, rgba(0,99,134,1) 0%, rgba(0,25,70,1) 100%, rgba(2,0,36,1) 006386%);
+	background-size: 600%;
+	background-position: 0 0;
+	animation: bmrFooterAnimation 25s linear forwards infinite;
 	* {
 		font-family: 'ZurichBT-Light', sans-serif;
 	}
 }
 .logo-container {
 	width: 25%;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     text-align: center;
     border-right: solid 1px #ffffff;
+	padding: 2rem 4rem;
+	display: flex;
+
 	img {
-		max-width: 250px;
-		padding: 2rem 4rem;
+		max-width: 100%;
+		object-fit: contain;
+		
 
 	}
 }
@@ -55,7 +63,18 @@
 .footer-bottom {
 	padding: 2rem;
 	display: flex;
-	
+	flex-direction: column;
+	.socials {
+		justify-content: flex-start;
+		@media screen and (min-width: 969px) {
+			display: none;
+			
+		}
+	}
+	.footer-bottom-row {
+		display: flex;
+		flex-direction: row;
+	}
 	.terms {
 		flex: 1 0 auto;
 		a {
@@ -83,14 +102,36 @@
 }
 
 .socials {
-	flex: 0 1 auto;
+	flex: 1;
     display: flex;
     align-items: center;
-	width: 20%;
+	width: 100%;
+	justify-content: flex-end;
+
 
 	img {
 		width: 50px;
 		margin: 0 2rem;
 		filter: brightness(0) invert(1);
+		@media screen and (max-width: 969px) {
+			width: 30px;
+			margin: 0 1rem 0 0;
+			
+		}
 	}
+}
+
+.flex-container .socials {
+	@media screen and (max-width: 969px) {
+		display: none;
+		
+	}
+}
+@keyframes bmrFooterAnimation {
+	0%   {background-position: 0 0;}
+    25% {background-position: 50% 0;}
+    50% {background-position: 90% 0;}
+    60% {background-position: 60%;}
+    75% {background-position: 40%;}
+    100%  {background-position: 0 0;}
 }
