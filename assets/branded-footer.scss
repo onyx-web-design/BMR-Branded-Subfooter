@@ -7,7 +7,12 @@
 	src: url(assets/ZurichBT-Light.ttf);
 }
 
+$bmrLightblue: #016085;
+$bmrDarkBlue: #001946;
 
+html {
+	overflow: hidden;
+}
 .flex-container {
 	display: flex;
 	width: 100%;
@@ -17,7 +22,7 @@
 
 .branded-footer {
 	background: rgb(0,99,134);
-	background: linear-gradient(90deg, rgba(0,99,134,1) 0%, rgba(0,25,70,1) 100%, rgba(2,0,36,1) 006386%);
+	background: linear-gradient(300deg, $bmrLightblue 10%,$bmrDarkBlue 30%, $bmrLightblue 50%, $bmrDarkBlue 70%,  $bmrLightblue 90%);
 	background-size: 600%;
 	background-position: 0 0;
 	animation: bmrFooterAnimation 25s linear forwards infinite;
@@ -30,8 +35,11 @@
     flex: 1 1 auto;
     text-align: center;
     border-right: solid 1px #ffffff;
-	padding: 2rem 4rem;
+	padding: 2rem;
 	display: flex;
+	@media screen and (max-width: 969px) {
+		width: 45%;
+	}
 
 	img {
 		max-width: 100%;
@@ -56,6 +64,12 @@
 			margin: 0 auto 0 2rem;
 			color: #ffffff;
 			max-width: 500px;
+			@media screen and (max-width: 969px) {
+				font-size: 0.8rem;
+			}
+			@media screen and (max-width: 500px) {
+				margin: 1rem;
+			}
 		}
 	}
 }
@@ -64,8 +78,16 @@
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
+	@media screen and (max-width: 500px) {
+		padding: 1.4rem;
+	}
+	
 	.socials {
 		justify-content: flex-start;
+
+		:nth-child(2) {
+			margin-left: 2rem;
+		}
 		@media screen and (min-width: 969px) {
 			display: none;
 			
@@ -77,26 +99,51 @@
 	}
 	.terms {
 		flex: 1 0 auto;
+		@media screen and (max-width: 969px) {
+			padding-top: 2rem;
+			
+		}
+		@media screen and (max-width: 500px) {
+			padding-top: 1rem;
+
+		}
 		a {
 			text-decoration: none;
 			color: #ffffff;
+			@media screen and (max-width: 500px) {
+				font-size: 0.7rem;
+				
+			}
 		}
 	}
 	.discover-more {
 		text-transform: uppercase;
 		color: #FFFFFF;
 		position: relative;
+		font-weight: 600;
 		font-family: 'ZurichBT-Bold', sans-serif;
+		@media screen and (max-width: 500px) {
+			font-size: 0.7rem;
+			white-space: nowrap;
+			
+		}
 
 		&::after {
 			content: '';
 			width:50%;
-			height:4px;
+			height:6px;
 			background-color:#E24725;
 			position: absolute;
 			bottom: -10px;
 			left: 0;
+			@media screen and (max-width: 969px) {
+				bottom: 15px;
+			}
+			@media screen and (max-width: 500px) {
+				bottom: 5px;
 
+				
+			}
 		}
 	}
 }
@@ -110,7 +157,7 @@
 
 
 	img {
-		width: 50px;
+		width: 40px;
 		margin: 0 2rem;
 		filter: brightness(0) invert(1);
 		@media screen and (max-width: 969px) {
