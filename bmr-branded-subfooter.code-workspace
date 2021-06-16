@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveSassCompile.settings.includeItems": [
+			"assets/"
+		],
+		"liveSassCompile.settings.formats": [
+			{
+				"format": "compressed",
+				"extensionName": ".css",
+				"savePath": "/assets/"
+			}
+		],
+		"liveSassCompile.settings.generateMap": true,
+		"liveSassCompile.settings.autoprefix": [
+			"last 2 versions",
+			"> 0.5%",
+			"ie > 8"
+		]
+	}
+}
