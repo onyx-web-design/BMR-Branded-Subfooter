@@ -55,7 +55,8 @@ body {
 		padding: 1rem 1.5rem;
 	}
 	@media screen and (max-width: 750px) {
-		width: 75%;
+		width: 100%;
+		padding: 0;
 		border-right: none;
 		margin: 0 auto
 	}
@@ -64,7 +65,10 @@ body {
 		max-width: 100%;
 		width: 100%;
 		object-fit: contain;
-		
+		@media screen and (max-width: 750px) {
+			max-width: 250px;
+			margin: 0 auto;
+		}
 
 	}
 }
@@ -111,7 +115,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	@media screen and (max-width: 750px) {
-		padding: 1.4rem;
+		padding: 1rem;
 	}
 	
 	.socials {
@@ -134,7 +138,7 @@ body {
 	.terms {
 		flex: 1 0 auto;
 		display: flex;
-		flex-direction: column;
+
 		@media screen and (max-width: 969px) {
 			padding-top: 2rem;
 			
@@ -144,7 +148,6 @@ body {
 
 		}
 		@media screen and (max-width: 750px) {
-			flex-direction: row-reverse;
 			justify-content: space-between;
 			width: 100%;
 		}
@@ -185,9 +188,7 @@ body {
 		right: 0;
 		top: -120%
 	}
-	@media screen and (max-width: 400px) {
-		top: -90%
-	}
+
 
 	&::after {
 		content: '';
@@ -195,7 +196,7 @@ body {
 		height:6px;
 		background-color:#E24725;
 		position: absolute;
-		bottom: 0;
+		bottom: -10px;
 		left: 0;
 		@media screen and (max-width: 969px) {
 			bottom: 15px;
