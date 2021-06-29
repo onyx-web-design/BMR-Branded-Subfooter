@@ -1,10 +1,14 @@
 @font-face {
 	font-family: 'ZurichBT-Bold';
 	src: url(assets/ZurichBT-Bold.ttf);
+	src: url(assets/ZurichBT-Bold.woff) format('woff'),
+		 url(assets/ZurichBT-Bold.woff2) format('woff2');
 }
 @font-face {
 	font-family: 'ZurichBT-Light';
 	src: url(assets/ZurichBT-Light.ttf);
+	src: url(assets/ZurichBT-Light.woff) format('woff'),
+		url(assets/ZurichBT-Light.woff2) format('woff2');
 }
 
 $bmrLightblue: #016085;
@@ -16,11 +20,17 @@ $topPadding: 2rem;
 html {
 	overflow: hidden;
 }
+body {
+	margin: 0;
+}
 .flex-container {
 	display: flex;
 	width: 100%;
     border-bottom: solid 1px #ffffff;
     flex-wrap: nowrap;
+	@media screen and (max-width: 750px) {
+		flex-direction: column;
+	}
 }
 
 .branded-footer {
@@ -44,9 +54,15 @@ html {
 		width: 45%;
 		padding: 1rem 1.5rem;
 	}
+	@media screen and (max-width: 750px) {
+		width: 75%;
+		border-right: none;
+		margin: 0 auto
+	}
 
 	img {
 		max-width: 100%;
+		width: 100%;
 		object-fit: contain;
 		
 
@@ -54,7 +70,7 @@ html {
 }
 
 .info-container {
-	width: 100%;
+	max-width: 100%;
 	display: flex;
 	align-content: center;
     align-items: center;
@@ -64,7 +80,15 @@ html {
 		padding-left: $sidePadding / 2;
 		padding-right: $sidePadding / 2;
 	}
-
+	@media screen and (max-width: 749px) {
+		padding: $sidePadding / 2.5;
+	}
+	@media screen and (max-width: 500px) {
+		padding: 0 1rem;
+	}
+	@media screen and (min-width: 750px) {
+		width: 100%;
+	}
 
 	.footer-excerpt {
 			margin: 0 auto 0 0;
@@ -86,7 +110,7 @@ html {
 	padding: $topPadding $sidePadding;
 	display: flex;
 	flex-direction: column;
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 750px) {
 		padding: 1.4rem;
 	}
 	
@@ -104,9 +128,13 @@ html {
 	.footer-bottom-row {
 		display: flex;
 		flex-direction: row;
+		position: relative;
+
 	}
 	.terms {
 		flex: 1 0 auto;
+		display: flex;
+		flex-direction: column;
 		@media screen and (max-width: 969px) {
 			padding-top: 2rem;
 			
@@ -115,12 +143,24 @@ html {
 			padding-top: 1rem;
 
 		}
+		@media screen and (max-width: 750px) {
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			width: 100%;
+		}
 		a {
 			text-decoration: none;
 			color: #ffffff;
 			@media screen and (max-width: 500px) {
-				font-size: 0.7rem;
+				font-size: 0.6rem;
+
 				
+			}
+		}
+		.copyright {
+				color: #ffffff;
+				@media screen and (max-width: 500px) {
+					font-size: 0.6rem;
 			}
 		}
 	}
@@ -132,10 +172,21 @@ html {
 	font-weight: 600;
 	white-space: nowrap;
 	font-family: 'ZurichBT-Bold', sans-serif;
+	@media screen and (max-width: 750px) {
+		position: absolute;
+		right: 0;
+		top: -55%
+		
+		
+	}
 	@media screen and (max-width: 500px) {
 		font-size: 0.7rem;
-		
-		
+		position: absolute;
+		right: 0;
+		top: -120%
+	}
+	@media screen and (max-width: 400px) {
+		top: -90%
 	}
 
 	&::after {
@@ -149,8 +200,9 @@ html {
 		@media screen and (max-width: 969px) {
 			bottom: 15px;
 		}
-		@media screen and (max-width: 500px) {
-			bottom: 5px;
+	
+		@media screen and (max-width: 750px) {
+			bottom: -15px;
 
 			
 		}
