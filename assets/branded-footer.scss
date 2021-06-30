@@ -56,19 +56,16 @@ body {
 	}
 	@media screen and (max-width: 750px) {
 		width: 100%;
-		padding: $topPadding / 2 0 0;
+		padding: $topPadding / 2 0 0 $sidePadding / 2;
 		border-right: none;
 		margin: 0 auto $topPadding / 2;
 	}
 
 	img {
 		max-width: 100%;
-		width: 100%;
+		min-width: 250px;
 		object-fit: contain;
-		@media screen and (max-width: 750px) {
-			max-width: 250px;
-			margin: 0 $sidePadding / 2;
-		}
+
 
 	}
 }
@@ -81,15 +78,9 @@ body {
 	padding: $topPadding $sidePadding;
 
 	@media screen and (max-width: 969px) {
-		padding-left: $sidePadding / 2;
-		padding-right: $sidePadding / 2;
+		padding: $topPadding / 2 $sidePadding / 2;
 	}
-	@media screen and (max-width: 749px) {
-		padding: $sidePadding / 2.5;
-	}
-	@media screen and (max-width: 500px) {
-		padding: 0 $sidePadding / 2.5;
-	}
+
 	@media screen and (min-width: 750px) {
 		width: 100%;
 	}
@@ -99,14 +90,12 @@ body {
 			color: #ffffff;
 			max-width: 600px;
 			font-weight: 300;
-			font-size: 1.2rem;
+			font-size: 18px;
 		
 			@media screen and (max-width: 969px) {
-				font-size: 0.9rem;
+				font-size: 16px;
 			}
-			@media screen and (max-width: 500px) {
-				margin: 1rem auto;
-			}
+
 	}
 }
 
@@ -123,7 +112,7 @@ body {
 		justify-content: flex-start;
 
 		:nth-child(2) {
-			margin-left: 2rem;
+			margin-left: $sidePadding;
 		}
 		@media screen and (min-width: 969px) {
 			display: none;
@@ -141,11 +130,11 @@ body {
 		display: flex;
 
 		@media screen and (max-width: 969px) {
-			padding-top: 2rem;
+			padding-top: $topPadding;
 			
 		}
 		@media screen and (max-width: 500px) {
-			padding-top: 1rem;
+			padding-top: $topPadding / 2;
 
 		}
 
@@ -153,7 +142,7 @@ body {
 			text-decoration: none;
 			color: #ffffff;
 			@media screen and (max-width: 500px) {
-				font-size: 0.6rem;
+				font-size: 10px;
 
 				
 			}
@@ -162,7 +151,7 @@ body {
 				color: #ffffff;
 				margin-right: $sidePadding;
 				@media screen and (max-width: 500px) {
-					font-size: 0.6rem;
+					font-size: 10px;
 			}
 		}
 	}
@@ -182,7 +171,7 @@ body {
 		
 	}
 	@media screen and (max-width: 500px) {
-		font-size: 0.7rem;
+		font-size: 11px;
 		position: absolute;
 		right: 0;
 		top: -120%
@@ -225,7 +214,7 @@ body {
 }
 
 .flex-container .socials {
-	line-height: 2.5rem;
+	line-height: 40px;
 	@media screen and (max-width: 969px) {
 		display: none;
 		
