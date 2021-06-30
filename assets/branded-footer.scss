@@ -13,8 +13,8 @@
 
 $bmrLightblue: #016085;
 $bmrDarkBlue: #001946;
-$sidePadding: 4.5rem;
-$topPadding: 2rem;
+$sidePadding: 50px;
+$topPadding: 30px;
 
 
 html {
@@ -52,13 +52,13 @@ body {
 	display: flex;
 	@media screen and (max-width: 969px) {
 		width: 45%;
-		padding: 1rem 1.5rem;
+		padding: $topPadding / 2 $sidePadding / 2;
 	}
 	@media screen and (max-width: 750px) {
 		width: 100%;
-		padding: 0;
+		padding: $topPadding / 2 0 0;
 		border-right: none;
-		margin: 0 auto
+		margin: 0 auto $topPadding / 2;
 	}
 
 	img {
@@ -67,7 +67,7 @@ body {
 		object-fit: contain;
 		@media screen and (max-width: 750px) {
 			max-width: 250px;
-			margin: 0 auto;
+			margin: 0 $sidePadding / 2;
 		}
 
 	}
@@ -78,17 +78,14 @@ body {
 	display: flex;
 	align-content: center;
     align-items: center;
-	padding-left: $sidePadding;
-	padding-right: $sidePadding;
+	padding: $topPadding $sidePadding;
+
 	@media screen and (max-width: 969px) {
 		padding-left: $sidePadding / 2;
 		padding-right: $sidePadding / 2;
 	}
 	@media screen and (max-width: 749px) {
 		padding: $sidePadding / 2.5;
-	}
-	@media screen and (max-width: 500px) {
-		padding: 0 1rem;
 	}
 	@media screen and (min-width: 750px) {
 		width: 100%;
@@ -114,8 +111,9 @@ body {
 	padding: $topPadding $sidePadding;
 	display: flex;
 	flex-direction: column;
-	@media screen and (max-width: 750px) {
-		padding: 1rem;
+	@media screen and (max-width: 969px) {
+
+		padding: $topPadding / 2 $sidePadding / 2;
 	}
 	
 	.socials {
@@ -147,10 +145,7 @@ body {
 			padding-top: 1rem;
 
 		}
-		@media screen and (max-width: 750px) {
-			justify-content: space-between;
-			width: 100%;
-		}
+
 		a {
 			text-decoration: none;
 			color: #ffffff;
@@ -162,6 +157,7 @@ body {
 		}
 		.copyright {
 				color: #ffffff;
+				margin-right: $sidePadding;
 				@media screen and (max-width: 500px) {
 					font-size: 0.6rem;
 			}
@@ -175,10 +171,10 @@ body {
 	font-weight: 600;
 	white-space: nowrap;
 	font-family: 'ZurichBT-Bold', sans-serif;
-	@media screen and (max-width: 750px) {
+	@media screen and (max-width: 850px) {
 		position: absolute;
 		right: 0;
-		top: -55%
+		top: -69%
 		
 		
 	}
@@ -202,7 +198,7 @@ body {
 			bottom: 15px;
 		}
 	
-		@media screen and (max-width: 750px) {
+		@media screen and (max-width: 850px) {
 			bottom: -15px;
 
 			
