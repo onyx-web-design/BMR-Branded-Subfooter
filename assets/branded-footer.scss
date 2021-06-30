@@ -14,6 +14,7 @@
 $bmrLightblue: #016085;
 $bmrDarkBlue: #001946;
 $sidePadding: 50px;
+$sidePaddingMobile: 20px;
 $topPadding: 30px;
 
 
@@ -52,11 +53,11 @@ body {
 	display: flex;
 	@media screen and (max-width: 969px) {
 		width: 45%;
-		padding: $topPadding / 2 $sidePadding / 2;
+		padding: $topPadding / 2 $sidePaddingMobile;
 	}
 	@media screen and (max-width: 750px) {
 		width: 100%;
-		padding: $topPadding / 2 0 0 $sidePadding / 2;
+		padding: $topPadding / 2 0 0 $sidePaddingMobile;
 		border-right: none;
 		margin: 0 auto $topPadding / 2;
 	}
@@ -78,14 +79,14 @@ body {
 	padding: $topPadding $sidePadding;
 
 	@media screen and (max-width: 969px) {
-		padding: $topPadding / 2 $sidePadding / 2;
+		padding: $topPadding / 2 $sidePaddingMobile;
 	}
 
 	@media screen and (min-width: 750px) {
 		width: 100%;
 	}
 	@media screen and (max-width: 750px) {
-		padding: 0 $sidePadding / 2  $topPadding / 2;
+		padding: 0 $sidePaddingMobile  $topPadding / 2;
 	}
 
 	.footer-excerpt {
@@ -108,18 +109,18 @@ body {
 	flex-direction: column;
 	@media screen and (max-width: 969px) {
 
-		padding: $topPadding / 2 $sidePadding / 2;
+		padding: $topPadding / 2 $sidePaddingMobile;
 	}
 	
 	.socials {
 		justify-content: flex-start;
 
-		:nth-child(2) {
-			margin-left: $sidePadding;
+		a:nth-child(2) {
+			margin-left: $sidePaddingMobile;
 		}
 		@media screen and (min-width: 969px) {
 			display: none;
-			
+
 		}
 	}
 	.footer-bottom-row {
@@ -151,10 +152,12 @@ body {
 			}
 		}
 		.copyright {
-				color: #ffffff;
-				margin-right: $sidePadding;
-				@media screen and (max-width: 500px) {
-					font-size: 10px;
+			color: #ffffff;
+			margin-right: $sidePadding;
+
+			@media screen and (max-width: 500px) {
+				font-size: 10px;
+				margin-right: $sidePaddingMobile;
 			}
 		}
 	}
