@@ -84,6 +84,9 @@ body {
 	@media screen and (min-width: 750px) {
 		width: 100%;
 	}
+	@media screen and (max-width: 750px) {
+		padding: 0 $sidePadding / 2  $topPadding / 2;
+	}
 
 	.footer-excerpt {
 			margin: 0 auto 0 0;
