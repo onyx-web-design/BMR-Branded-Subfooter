@@ -87,6 +87,9 @@ body {
 	@media screen and (max-width: 749px) {
 		padding: $sidePadding / 2.5;
 	}
+	@media screen and (max-width: 500px) {
+		padding: 0 $sidePadding / 2.5;
+	}
 	@media screen and (min-width: 750px) {
 		width: 100%;
 	}
