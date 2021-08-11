@@ -148,7 +148,7 @@ body {
         }
         .copyright {
                 color: #ffffff;
-                margin-right: $sidePadding;
+                margin-right: 25px;
                 @media screen and (max-width: 500px) {
                     font-size: 10px;
             }
@@ -163,6 +163,13 @@ body {
     white-space: nowrap;
     font-family: 'ZurichBT-Bold', sans-serif;
 	font-size: 12px;
+
+	a {
+		text-decoration: none;
+		color: #FFFFFF;
+		font-weight: 600;
+		font-family: 'ZurichBT-Bold', sans-serif;
+	}
     @media screen and (max-width: 850px) {
         position: absolute;
         right: 0;
