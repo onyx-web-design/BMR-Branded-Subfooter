@@ -52,7 +52,7 @@ body {
           flex: 1 1 auto;
   text-align: center;
   border-right: solid 1px #ffffff;
-  padding: 30px 50px;
+  padding: 50px 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,16 +61,16 @@ body {
 @media screen and (max-width: 969px) {
   .logo-container {
     width: 45%;
-    padding: 15px 25px;
+    padding: 25px 25px;
   }
 }
 
 @media screen and (max-width: 750px) {
   .logo-container {
     width: 100%;
-    padding: 15px 0 0 25px;
+    padding: 25px 0 0 25px;
     border-right: none;
-    margin: 0 auto 15px;
+    margin: 0 auto 25px;
   }
 }
 
@@ -91,12 +91,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 50px;
+  padding: 50px 50px;
 }
 
 @media screen and (max-width: 969px) {
   .info-container {
-    padding: 15px 25px;
+    padding: 25px 25px;
   }
 }
 
@@ -108,26 +108,20 @@ body {
 
 @media screen and (max-width: 750px) {
   .info-container {
-    padding: 0 25px 15px;
+    padding: 0 25px 25px;
   }
 }
 
 .info-container .footer-excerpt {
   margin: 0 auto 0 0;
   color: #ffffff;
-  max-width: 600px;
+  max-width: 450px;
   font-weight: 300;
-  font-size: 18px;
-}
-
-@media screen and (max-width: 969px) {
-  .info-container .footer-excerpt {
-    font-size: 16px;
-  }
+  font-size: 14px;
 }
 
 .footer-bottom {
-  padding: 30px 50px;
+  padding: 50px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +133,7 @@ body {
 
 @media screen and (max-width: 969px) {
   .footer-bottom {
-    padding: 15px 25px;
+    padding: 25px 25px;
   }
 }
 
@@ -177,17 +171,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 969px) {
   .footer-bottom .terms {
-    padding-top: 30px;
+    padding-top: 50px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .footer-bottom .terms {
-    padding-top: 15px;
+    padding-top: 25px;
   }
 }
 
@@ -220,13 +215,14 @@ body {
   font-weight: 600;
   white-space: nowrap;
   font-family: 'ZurichBT-Bold', sans-serif;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 850px) {
   .discover-more {
     position: absolute;
     right: 0;
-    top: -69%;
+    top: -50%;
   }
 }
 
@@ -235,23 +231,23 @@ body {
     font-size: 11px;
     position: absolute;
     right: 0;
-    top: -120%;
+    top: -75%;
   }
 }
 
 .discover-more::after {
   content: '';
   width: 50%;
-  height: 5px;
+  height: 4px;
   background-color: #E24725;
   position: absolute;
-  bottom: -10px;
+  bottom: -15px;
   left: 0;
 }
 
 @media screen and (max-width: 969px) {
   .discover-more::after {
-    bottom: 15px;
+    bottom: 30px;
   }
 }
 
