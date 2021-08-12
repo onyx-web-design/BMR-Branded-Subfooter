@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js" style="overflow:hidden;">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <title>BMR Subfooter</title>
+/**
+ * BMR Subfooter
+ * @author ONYX Design
+ * @authorURL onyxdesign.net
+ * @version 0.1
+ */
 
-<link rel="stylesheet" href="assets/branded-footer.css">
-</head>
-
-<body style="margin:0;">
+var bmrSubfooterContent = `<style>
+	@font-face{font-family:'ZurichBT-Bold';src:url(/assets/ZurichBT-Bold.ttf);src:url(/assets/ZurichBT-Bold.woff) format("woff"),url(/assets/ZurichBT-Bold.woff2) format("woff2")}@font-face{font-family:'ZurichBT-Light';src:url(/assets/ZurichBT-Light.ttf);src:url(/assets/ZurichBT-Light.woff) format("woff"),url(/assets/ZurichBT-Light.woff2) format("woff2")}#bmrsf-flex-container{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;border-bottom:solid 1px #ffffff;-ms-flex-wrap:nowrap;flex-wrap:nowrap}@media screen and (max-width: 750px){#bmrsf-flex-container{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}#bmrsf{background:#262222;font-family:'ZurichBT-Light', sans-serif;color:#FFFFFF !important}#bmrsf *{color:#FFFFFF !important}#bmrsf-logo-container{width:25%;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;text-align:center;border-right:solid 1px #ffffff;padding:50px 75px;display:-webkit-box;display:-ms-flexbox;display:flex}@media screen and (max-width: 969px){#bmrsf-logo-container{width:45%;padding:25px 25px}}@media screen and (max-width: 750px){#bmrsf-logo-container{width:100%;padding:25px 0 0 25px;border-right:none;margin:0 auto 25px}}#bmrsf-logo-container svg{max-width:100%;min-width:250px}#bmrsf-info-container{max-width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:50px 50px}@media screen and (max-width: 969px){#bmrsf-info-container{padding:25px 25px}}@media screen and (min-width: 750px){#bmrsf-info-container{width:100%}}@media screen and (max-width: 750px){#bmrsf-info-container{padding:0 25px 25px}}#bmrsf-info-container #bmrsf-excerpt{margin:0 auto 0 0;max-width:450px;font-weight:300;font-size:14px}.footer-bottom{padding:50px 50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}@media screen and (max-width: 969px){.footer-bottom{padding:25px 25px}}.footer-bottom .bmrsf-socials :nth-child(2){margin-left:27.77778px}@media screen and (min-width: 969px){.footer-bottom .bmrsf-socials{display:none}}.footer-bottom .footer-bottom-row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;position:relative}.footer-bottom .terms{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:12px}@media screen and (max-width: 969px){.footer-bottom .terms{padding-top:50px}}@media screen and (max-width: 500px){.footer-bottom .terms{padding-top:25px}}.footer-bottom .terms a{text-decoration:none}@media screen and (max-width: 500px){.footer-bottom .terms a{font-size:10px}}.footer-bottom .terms .bmrsf-copyright{margin-right:10px}@media screen and (max-width: 500px){.footer-bottom .terms .bmrsf-copyright{font-size:10px}}.discover-more{text-transform:uppercase;position:relative;font-weight:600;white-space:nowrap;font-family:'ZurichBT-Bold', sans-serif;font-size:12px}.discover-more a{text-decoration:none;font-weight:600;font-family:'ZurichBT-Bold', sans-serif}@media screen and (max-width: 850px){.discover-more{position:absolute;right:0;top:-50%}}@media screen and (max-width: 500px){.discover-more{font-size:11px;top:-75%}}.discover-more::after{content:'';width:50%;height:4px;background-color:#E24725;position:absolute;bottom:-15px;left:0}@media screen and (max-width: 969px) and (min-width: 850px){.discover-more::after{bottom:30px}}.bmrsf-socials{position:relative}#bmrsf-flex-container .bmrsf-socials{line-height:40px}@media screen and (max-width: 969px){#bmrsf-flex-container .bmrsf-socials{display:none}}.bmrsf-wrapper #bmrsf{display:block !important}
+</style>
 <div id="bmrsf">
         <div id="bmrsf-flex-container">
             <div id="bmrsf-logo-container"> 
@@ -51,12 +50,19 @@
         </div>
         <div class="footer-bottom-row">
             <div class="terms"> 
-                <div id="bmrsf-copyright">© <span id="bmrsf-getyear">2021</span></div>
+                <div id="bmrsf-copyright">© <span id="bmrsf-getyear"></span></div>
                 <a href="https://www.biomedrealty.com/terms-and-privacy" target="_blank">Terms of Service & Privacy Policy</a> 
             </div>
             <div class="discover-more"><a href="http://biomedrealty.com/" target="_blank">Discover more</a></div>
         </div>
     </div>
 </div>
-</body>
-</html>
+`;
+
+var bmrsfWrapper = document.getElementById('wrapper') || document.body,
+	bmrsfCopyright = new Date();
+
+bmrsfWrapper.insertAdjacentHTML('beforeend', bmrSubfooterContent);
+document.getElementById("bmrsf-getyear").innerHTML = bmrsfCopyright.getFullYear();
+bmrsfWrapper.classList.add('bmrsf-wrapper');
+
