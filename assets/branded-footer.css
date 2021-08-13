@@ -31,7 +31,8 @@
   font-family: 'ZurichBT-Light', sans-serif;
   color: #FFFFFF !important; }
   #bmrsf * {
-    color: #FFFFFF !important; }
+    color: #FFFFFF !important;
+    -webkit-font-smoothing: subpixel-antialiased !important; }
 
 #bmrsf-logo-container {
   -webkit-box-flex: 1;
