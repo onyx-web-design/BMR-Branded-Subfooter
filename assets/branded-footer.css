@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'ZurichBT-Bold';
-  src: url(https://bmr-subfooter.pages.dev/assets/ZurichBT-Bold.ttf);
-  src: url(https://bmr-subfooter.pages.dev/assets/ZurichBT-Bold.woff) format("woff"), url(https://bmr-subfooter.pages.dev/assets/ZurichBT-Bold.woff2) format("woff2"); }
+  src: url(https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfooter/master/assets/ZurichBT-Bold.ttf);
+  src: url(https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfooter/master/assets/ZurichBT-Bold.woff) format("woff"), url(https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfooter/master/assets/ZurichBT-Bold.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'ZurichBT-Light';
-  src: url(https://bmr-subfooter.pages.dev/assets/ZurichBT-Light.ttf);
-  src: url(https://bmr-subfooter.pages.dev/assets/ZurichBT-Light.woff) format("woff"), url(https://bmr-subfooter.pages.dev/assets/ZurichBT-Light.woff2) format("woff2"); }
+  src: url(https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfooter/master/assets/ZurichBT-Light.ttf);
+  src: url(https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfooter/master/assets/ZurichBT-Light.woff) format("woff"), url(https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfooter/master/assets/ZurichBT-Light.woff2) format("woff2"); }
 
 #bmrsf-flex-container {
   display: -webkit-box;
