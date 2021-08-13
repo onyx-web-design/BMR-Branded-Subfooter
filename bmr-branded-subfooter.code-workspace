@@ -10,8 +10,13 @@
 		],
 		"liveSassCompile.settings.formats": [
 			{
-				"format": "compressed",
+				"format": "nested",
 				"extensionName": ".css",
+				"savePath": "/assets/"
+			},
+			{
+				"format": "compressed",
+				"extensionName": ".min.css",
 				"savePath": "/assets/"
 			}
 		],
