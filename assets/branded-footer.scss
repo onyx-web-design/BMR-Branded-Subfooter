@@ -1,4 +1,4 @@
-$fontPath: 'https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfooter/master/assets/';
+$fontPath: 'https://onyxdesign.net/bmr-branded-subfooter/assets/';
 @font-face {
     font-family: 'ZurichBT-Bold';
     src: url(#{$fontPath}ZurichBT-Bold.ttf);
@@ -14,7 +14,7 @@ $fontPath: 'https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfoo
 
 $bmrLightblue: #016085;
 $bmrDarkBlue: #001946;
-$bmrBackground: #262222;
+$bmrBackground: #272222;
 $sidePadding: 50px;
 $topPadding: 50px;
 
@@ -39,6 +39,8 @@ $topPadding: 50px;
 	* {
 		color:#FFFFFF !important;
 		-webkit-font-smoothing:subpixel-antialiased !important;
+		letter-spacing:0 !important;
+		line-height:120% !important;
 	}
 }
 #bmrsf-logo-container {

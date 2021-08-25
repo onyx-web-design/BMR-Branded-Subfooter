@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'ZurichBT-Bold';
-  src: url(https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfooter/master/assets/ZurichBT-Bold.ttf);
-  src: url(https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfooter/master/assets/ZurichBT-Bold.woff) format("woff"), url(https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfooter/master/assets/ZurichBT-Bold.woff2) format("woff2"); }
+  src: url(https://onyxdesign.net/bmr-branded-subfooter/assets/ZurichBT-Bold.ttf);
+  src: url(https://onyxdesign.net/bmr-branded-subfooter/assets/ZurichBT-Bold.woff) format("woff"), url(https://onyxdesign.net/bmr-branded-subfooter/assets/ZurichBT-Bold.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'ZurichBT-Light';
-  src: url(https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfooter/master/assets/ZurichBT-Light.ttf);
-  src: url(https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfooter/master/assets/ZurichBT-Light.woff) format("woff"), url(https://raw.githubusercontent.com/onyx-web-design/BMR-Branded-Subfooter/master/assets/ZurichBT-Light.woff2) format("woff2"); }
+  src: url(https://onyxdesign.net/bmr-branded-subfooter/assets/ZurichBT-Light.ttf);
+  src: url(https://onyxdesign.net/bmr-branded-subfooter/assets/ZurichBT-Light.woff) format("woff"), url(https://onyxdesign.net/bmr-branded-subfooter/assets/ZurichBT-Light.woff2) format("woff2"); }
 
 #bmrsf-flex-container {
   display: -webkit-box;
@@ -27,12 +27,14 @@
               flex-direction: column; } }
 
 #bmrsf {
-  background: #262222;
+  background: #272222;
   font-family: 'ZurichBT-Light', sans-serif;
   color: #FFFFFF !important; }
   #bmrsf * {
     color: #FFFFFF !important;
-    -webkit-font-smoothing: subpixel-antialiased !important; }
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    letter-spacing: 0 !important;
+    line-height: 120% !important; }
 
 #bmrsf-logo-container {
   -webkit-box-flex: 1;
